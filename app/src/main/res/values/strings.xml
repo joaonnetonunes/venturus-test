@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">VenturusTest</string>
     <string name="image">Image</string>
+    <string name="gallery">Cats Gallery</string>
+    <string name="ClientID">Client-ID 3b883f41ad86df1</string>
+    <string name="appName">Venturus-Test</string>
+    <string name="query">cats</string>
 </resources>

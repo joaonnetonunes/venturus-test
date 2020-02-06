@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setUpAppBar() {
         setSupportActionBar(toolbar)
-        appbarTitle.text = "Imagens"
+        appbarTitle.text = getString(R.string.gallery)
     }
 
     private fun setUpRecyclerView() {

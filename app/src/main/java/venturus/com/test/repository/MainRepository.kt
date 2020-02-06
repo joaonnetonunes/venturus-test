@@ -1,5 +1,7 @@
 package ventutus.com.test.repository
 
+import android.util.Log
+import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import retrofit2.Call
@@ -20,7 +22,8 @@ class MainRepository {
             .enqueue(object : Callback<ReceiveData>{
 
                 override fun onFailure(call: Call<ReceiveData>, t: Throwable) {
-                    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+                   Log.i("--->", t.message.toString())
                 }
 
                 override fun onResponse(call: Call<ReceiveData>, response: Response<ReceiveData>) {
