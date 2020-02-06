@@ -2,8 +2,7 @@ package ventutus.com.test.model
 
 import java.io.Serializable
 
-class Picture: Serializable{
-
+class Picture: Serializable {
     var id: String? = null
     var title: String? = null
     var description: String? = null
@@ -40,5 +39,4 @@ class Picture: Serializable{
     var include_album_ads: Boolean? = null
     var images: List<Images>? = null
     var ad_config: AdConfig? = null
-
 }

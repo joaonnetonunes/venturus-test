@@ -2,8 +2,7 @@ package ventutus.com.test.model
 
 import java.io.Serializable
 
-class Tags(): Serializable {
-
+class Tags: Serializable {
     var ad_type: Int? = null
     var ad_url: String? = null
     var in_gallery: Boolean? = null

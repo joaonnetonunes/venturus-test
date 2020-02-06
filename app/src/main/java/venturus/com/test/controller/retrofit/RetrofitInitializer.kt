@@ -11,11 +11,14 @@ class RetrofitInitializer {
     private var retrofit: Retrofit
 
     init {
-        val interceptor = HttpLoggingInterceptor()
-        interceptor.level = HttpLoggingInterceptor.Level.BODY
+
+        val interceptor = HttpLoggingInterceptor().apply {
+            this.level = HttpLoggingInterceptor.Level.BODY
+        }
 
         val client = OkHttpClient.Builder()
             .readTimeout(60, TimeUnit.SECONDS)
+            .addInterceptor(interceptor)
             .connectTimeout(60, TimeUnit.SECONDS)
             .retryOnConnectionFailure(false)
             .build()
@@ -27,7 +30,6 @@ class RetrofitInitializer {
             .build()
     }
 
-    fun getPicturesService(): GetPicturesService {
-        return retrofit.create(GetPicturesService::class.java)
-    }
+    fun picturesService(): PicturesService = retrofit.create(PicturesService::class.java)
+
 }

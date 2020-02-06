@@ -2,8 +2,7 @@ package ventutus.com.test.model
 
 import java.io.Serializable
 
-class Images: Serializable{
-
+class Images: Serializable {
     var id: String? = null
     var title: String? = null
     var datetime: Int? = null
