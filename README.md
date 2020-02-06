@@ -4,9 +4,9 @@ Aplicação Android com Kotlin para aplicação à vaga de de Desenvolvedor Andr
 
 ### Objetivos do teste
 
--[x] Implementar um app Android com Kotlin
--[x] Realizar uma requisição HTTP para a API do imgur
--[x] Mostrar as imagens recebidas na requisição numa galeria
+- [x] Implementar um app Android com Kotlin
+- [x] Realizar uma requisição HTTP para a API do imgur
+- [x] Mostrar as imagens recebidas na requisição numa galeria
 
 ### Bibliotecas utilizadas
 
