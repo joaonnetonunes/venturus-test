@@ -15,6 +15,6 @@ Escolhida por facilitar a comunicação com api's, simplificando a configuraçã
 ###### Glide
 Escolhida por ser de fácil utilização para colocar imagens de um link em um ImageView.
 
-### Dificuldades encontrdas
+### Dificuldades encontradas
 
 Foram encontradas algumas dificuldades principalmente na comunicação com a api do imgur. A principal foi a montagem do cabeçalho da requisição, em que era necessário enviar além do campo Authorization, o campo User-Agent. Pelas experiências anteriores com requisições HTTP, fora imaginadas algumas hipóteses possíveis para o problema, posteriormente, validando-as até alcançar a resolução da adversidade.
